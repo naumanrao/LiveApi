@@ -4,7 +4,7 @@
 
 #### Download project
 
-`git clone https://github.com/codersgyan/ecommerce-rest-apis-node.git`
+`git clone https://github.com/naumanrao/LiveApi.git`
 
 #### Install Dependancies
 After cloning/downloading the source code, change directory to project folder ( project root folder ). 
