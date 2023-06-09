@@ -10,13 +10,13 @@ const productSchema = new Schema(
     image: {
       type: String,
       required: true,
-      get: (image) => {
+      get: function (image) {
         // http://localhost:5000/uploads/1616443169266-52350494.png
         if (process.env.ON_HEROKU == "true") {
           return `${image}`;
         }
 
-        return `${APP_URL}/${image}`;
+        return `${APP_URL}/${image.replace(/\\/g, "/")}`;
       },
     },
   },
