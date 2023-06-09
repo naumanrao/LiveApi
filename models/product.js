@@ -16,7 +16,10 @@ const productSchema = new Schema(
           return `${image}`;
         }
 
-        return `${APP_URL}/${image.replace(/\\/g, "/")}`;
+        return `${"https://liveapi-production-d720.up.railway.app"}/${image.replace(
+          /\\/g,
+          "/"
+        )}`;
       },
     },
   },
